@@ -298,6 +298,20 @@ escrow.complete(<span class="accent">pactId</span>);
 escrow.verify(<span class="accent">pactId</span>);
 <span class="highlight">// -> 1000 PACT released to Agent B</span>
     </div>
+
+    <h3>Payment Channel Flow</h3>
+    <div class="code-block">
+<span class="comment">// Agent A opens a channel with 10,000 PACT</span>
+channel.open(<span class="accent">agentB</span>, <span class="accent">10000e18</span>);
+
+<span class="comment">// Off-chain: agents exchange EIP-712 signed updates</span>
+<span class="comment">// Each update: (channelId, nonce, balanceA, balanceB)</span>
+<span class="comment">// 10,000 API calls = 10,000 signed messages, zero gas</span>
+
+<span class="comment">// Cooperative close — both sign, instant settlement</span>
+channel.coopClose(<span class="accent">channelId</span>, <span class="accent">balA</span>, <span class="accent">balB</span>, <span class="accent">nonce</span>, <span class="accent">sigA</span>, <span class="accent">sigB</span>);
+<span class="highlight">// -> 2 on-chain txs total, unlimited payments between</span>
+    </div>
   </section>
 
   <section id="tokenomics">
@@ -333,10 +347,18 @@ escrow.verify(<span class="accent">pactId</span>);
     <h2>// CONTRACTS</h2>
     <p class="muted">Deployed on Arbitrum One. Source code is open. Contracts are immutable.</p>
 
+    <h3>Deployed</h3>
     <table class="spec-table">
       <tr><td>PACT Token</td><td><a href="https://arbiscan.io/address/0x809c2540358E2cF37050cCE41A610cb6CE66Abe1">0x809c2540...CE66Abe1</a></td></tr>
       <tr><td>PactEscrow</td><td><a href="https://arbiscan.io/address/0xB593F112fAEB2a1Fe15c5cAC7AEF02787662B4D6">0xB593F112...7662B4D6</a></td></tr>
       <tr><td>PactVesting</td><td><a href="https://arbiscan.io/address/0x582CC446eF1b841F7d2432EF401B01473618d53E">0x582CC446...18d53E</a></td></tr>
+    </table>
+
+    <h3>Compiled &mdash; Deploying with Liquidity</h3>
+    <table class="spec-table">
+      <tr><td>PactPaymentChannel</td><td>Bidirectional micropayments, EIP-712 signatures, 1hr challenge period</td></tr>
+      <tr><td>PactAirdrop</td><td>Merkle proof claims, 3-factor verification</td></tr>
+      <tr><td>PactLPRewards</td><td>LP staking with lock multipliers (1x / 1.5x / 2x)</td></tr>
     </table>
 
     <h3>Escrow Status</h3>
@@ -354,11 +376,17 @@ GET <span class="accent">/whitepaper.md</span>
 GET <span class="accent">/abi/pact.json</span>
 GET <span class="accent">/abi/escrow.json</span>
 GET <span class="accent">/abi/vesting.json</span>
+GET <span class="accent">/abi/payment-channel.json</span>
+GET <span class="accent">/abi/airdrop.json</span>
+GET <span class="accent">/abi/lp-rewards.json</span>
 
 <span class="comment"># Contract source</span>
 GET <span class="accent">/src/PACT.sol</span>
 GET <span class="accent">/src/PactEscrow.sol</span>
 GET <span class="accent">/src/PactVesting.sol</span>
+GET <span class="accent">/src/PactPaymentChannel.sol</span>
+GET <span class="accent">/src/PactAirdrop.sol</span>
+GET <span class="accent">/src/PactLPRewards.sol</span>
     </div>
   </section>
 
