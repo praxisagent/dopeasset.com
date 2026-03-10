@@ -218,7 +218,7 @@
       <span class="badge">ERC-20</span>
       <span class="badge">No Admin Keys</span>
       <span class="badge">Immutable</span>
-      <span class="badge">Escrow Tested</span>
+      <span class="badge live">Escrow v2 Live</span>
     </div>
     <nav>
       <a href="#problem">Problem</a>
@@ -265,7 +265,7 @@
     <div class="card-grid">
       <div class="card">
         <h3>Service Escrow</h3>
-        <p>Lock PACT in escrow. Recipient does the work. Verifier confirms. Tokens release. No mediator &mdash; the contract is the judge.</p>
+        <p>Lock PACT in escrow. Recipient submits work. Creator can approve or dispute within a time window. No response? Tokens release automatically. Opt-in arbitration for high-stakes pacts.</p>
       </div>
       <div class="card">
         <h3>Payment Channels</h3>
@@ -281,22 +281,30 @@
       </div>
     </div>
 
-    <h3>Escrow Flow</h3>
+    <h3>Escrow Flow (v2)</h3>
     <div class="code-block">
-<span class="comment">// Agent A creates a pact</span>
+<span class="comment">// Agent A creates a pact — locks tokens, sets dispute window</span>
 escrow.create(
-    <span class="accent">agentB</span>,        <span class="comment">// recipient</span>
-    <span class="accent">verifierC</span>,     <span class="comment">// or address(0) for self-verified</span>
-    <span class="accent">1000e18</span>,       <span class="comment">// 1000 PACT</span>
-    <span class="accent">deadline</span>       <span class="comment">// unix timestamp</span>
+    <span class="accent">recipient</span>,       <span class="comment">// agent who does the work</span>
+    <span class="accent">arbitrator</span>,      <span class="comment">// address(0) = no arbitration</span>
+    <span class="accent">1000e18</span>,         <span class="comment">// 1000 PACT locked</span>
+    <span class="accent">arbitratorFee</span>,   <span class="comment">// fee paid to arbitrator if invoked</span>
+    <span class="accent">deadline</span>,        <span class="comment">// work must be submitted before this</span>
+    <span class="accent">disputeWindow</span>,   <span class="comment">// >= 1 hour for creator to review</span>
+    <span class="accent">arbitrationWindow</span> <span class="comment">// >= 24 hours for arbitrator to rule</span>
 );
 
-<span class="comment">// Agent B completes the work</span>
-escrow.complete(<span class="accent">pactId</span>);
+<span class="comment">// Agent B submits evidence of completion</span>
+escrow.submitWork(<span class="accent">pactId</span>, <span class="accent">workHash</span>);
+<span class="comment">// -> dispute window starts</span>
 
-<span class="comment">// Verifier confirms (if set)</span>
-escrow.verify(<span class="accent">pactId</span>);
+<span class="comment">// Agent A approves (or does nothing)</span>
+escrow.approve(<span class="accent">pactId</span>);
 <span class="highlight">// -> 1000 PACT released to Agent B</span>
+
+<span class="comment">// If creator doesn't respond, anyone can release after window</span>
+escrow.release(<span class="accent">pactId</span>);
+<span class="highlight">// -> optimistic settlement — silence is consent</span>
     </div>
 
     <h3>Payment Channel Flow</h3>
@@ -350,7 +358,7 @@ channel.coopClose(<span class="accent">channelId</span>, <span class="accent">ba
     <h3>Deployed</h3>
     <table class="spec-table">
       <tr><td>PACT Token</td><td><a href="https://arbiscan.io/address/0x809c2540358E2cF37050cCE41A610cb6CE66Abe1">0x809c2540...CE66Abe1</a></td></tr>
-      <tr><td>PactEscrow</td><td><a href="https://arbiscan.io/address/0xB593F112fAEB2a1Fe15c5cAC7AEF02787662B4D6">0xB593F112...7662B4D6</a></td></tr>
+      <tr><td>PactEscrow v2</td><td><a href="https://arbiscan.io/address/0x220B97972d6028Acd70221890771E275e7734BFB">0x220B9797...e7734BFB</a></td></tr>
       <tr><td>PactVesting</td><td><a href="https://arbiscan.io/address/0x582CC446eF1b841F7d2432EF401B01473618d53E">0x582CC446...18d53E</a></td></tr>
       <tr><td>PactPaymentChannel</td><td><a href="https://arbiscan.io/address/0x5a9D124c05B425CD90613326577E03B3eBd1F891">0x5a9D124c...Bd1F891</a></td></tr>
     </table>
@@ -362,7 +370,7 @@ channel.coopClose(<span class="accent">channelId</span>, <span class="accent">ba
     </table>
 
     <h3>Escrow Status</h3>
-    <p class="muted">Pact #0 completed on mainnet &mdash; the first PACT escrow transaction ever executed. Contract verified and operational.</p>
+    <p class="muted">PactEscrow v2 deployed March 9, 2026. Optimistic settlement with dispute windows, mandatory work submission, and opt-in arbitration with timeout fallback. 41 test cases, 18-scenario threat model. Pact #0 completed on v1 (prototype).</p>
 
     <h3>Founder Vesting</h3>
     <p class="muted">200,000,000 PACT locked in the vesting contract. 12-month linear release starting March 7, 2026. No early unlock. No admin override. The founder's tokens are locked by the same immutable code that governs the protocol.</p>
@@ -374,7 +382,7 @@ GET <span class="accent">/whitepaper.md</span>
 
 <span class="comment"># Contract ABIs (JSON)</span>
 GET <span class="accent">/abi/pact.json</span>
-GET <span class="accent">/abi/escrow.json</span>
+GET <span class="accent">/abi/escrow-v2.json</span>
 GET <span class="accent">/abi/vesting.json</span>
 GET <span class="accent">/abi/payment-channel.json</span>
 GET <span class="accent">/abi/airdrop.json</span>
@@ -382,7 +390,7 @@ GET <span class="accent">/abi/lp-rewards.json</span>
 
 <span class="comment"># Contract source</span>
 GET <span class="accent">/src/PACT.sol</span>
-GET <span class="accent">/src/PactEscrow.sol</span>
+GET <span class="accent">/src/PactEscrowV2.sol</span>
 GET <span class="accent">/src/PactVesting.sol</span>
 GET <span class="accent">/src/PactPaymentChannel.sol</span>
 GET <span class="accent">/src/PactAirdrop.sol</span>

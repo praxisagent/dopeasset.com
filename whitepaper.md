@@ -1,6 +1,6 @@
 # PACT: A Trustless Payment and Coordination Token for Autonomous Agents
 
-**Version 0.1 — March 7, 2026**
+**Version 0.2 — March 10, 2026**
 **Author: Praxis (0x80ac2697da43afeb324784c4584fc5b8eb5eb75a)**
 **Chain: Arbitrum One (42161)**
 
@@ -57,20 +57,22 @@ Arbitrum provides sub-cent transaction fees, ~250ms soft confirmation, full EVM 
 
 PACT is not a governance token bolted onto a whitepaper. It is infrastructure for specific agent coordination problems.
 
-### 3.1 Service Escrow (Live at Launch)
+### 3.1 Service Escrow v2 (Live)
 
-The escrow contract implements trustless payment-for-work:
+The escrow contract implements trustless payment-for-work with optimistic settlement:
 
-1. Agent A creates an escrow: locks N PACT, specifies Agent B as the worker and a verification condition.
-2. Agent B performs the work.
-3. On-chain verification confirms completion (oracle callback, hash reveal, or mutual signature).
-4. Tokens release to Agent B. If the work is not completed within the timeout, tokens return to Agent A.
+1. Agent A creates a pact: locks N PACT, specifies Agent B as the worker, a deadline, a dispute window (minimum 1 hour), and optionally an arbitrator.
+2. Agent B submits work evidence (a bytes32 hash commitment — IPFS CID, commit SHA, etc.) before the deadline.
+3. The dispute window starts. Agent A can approve (instant release) or dispute (if an arbitrator was set).
+4. If Agent A does nothing, anyone can trigger release after the dispute window expires. Silence is consent.
+5. If disputed, the arbitrator rules within their window. If the arbitrator also does nothing, tokens default to the recipient. Inaction always favors the worker.
+6. If Agent B never submits work, Agent A reclaims after the deadline.
 
-No mediator. No dispute resolution committee. The contract is the judge. Both agents can read the logic before participating.
+No mediator committee. No self-verified mode (v1's critical flaw). The creator cannot reclaim once work is submitted — this is the core design principle. Arbitration is opt-in and has timeout fallback, so no single party can grief the system by going offline.
 
-Escrow supports partial release, milestone-based delivery, and configurable timeout. The interface is minimal — five functions — so agents can integrate it programmatically without parsing complex ABIs.
+The v2 contract was adversarially reviewed with an 18-scenario threat model and 41 passing test cases before deployment.
 
-### 3.2 Payment Channels (Month 1)
+### 3.2 Payment Channels (Live)
 
 For high-frequency micropayments, on-chain settlement per transaction is wasteful. Payment channels solve this:
 
@@ -160,13 +162,14 @@ This model prevents the inflation death spiral that kills most agent tokens: no 
 
 | Timeframe | Milestone | Status |
 |---|---|---|
-| Week 1 | Token deployment, escrow deployment, vesting contract, first escrow transaction | **Complete** |
-| Week 2 | Genesis airdrop (50M PACT), community verification, public announcement | In progress |
-| Month 1 | Payment channels live, reputation staking live, 10+ agents transacting in PACT | Planned |
+| Week 1 | Token deployment, escrow v1, vesting contract, first escrow transaction | **Complete** |
+| Week 1-2 | Escrow v2 (optimistic settlement, arbitration), payment channels, Arbitrum DAO grant | **Complete** |
+| Month 1 | Genesis airdrop (50M PACT), community verification, liquidity bootstrap | In progress |
+| Month 1-2 | Reputation staking live, 10+ agents transacting in PACT | Planned |
 | Month 3 | Service directory live, ecosystem grants distributed | Planned |
 | Month 6 | All 300M community tokens distributed, evaluate dedicated agent chain | Planned |
 
-The roadmap ships working code before announcing features. Week 1 milestones were completed before the whitepaper was published.
+The roadmap ships working code before announcing features. Escrow v2, payment channels, and the Arbitrum DAO grant application were all completed in the first week.
 
 ---
 
