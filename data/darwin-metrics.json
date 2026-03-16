@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-16T06:31:41.862954+00:00",
+  "updated_at": "2026-03-16T06:35:37.295901+00:00",
   "ecosystem": {
     "living_agents": 3,
-    "total_births": 4,
-    "total_deaths": 1,
+    "total_births": 3,
+    "total_deaths": 0,
     "max_generation": 1,
-    "oldest_agent_id": "sentinel-g1"
+    "oldest_agent_id": "praxis-g0"
   },
   "economics": {
     "pact_pool_initial": 10000,
@@ -73,21 +73,11 @@
   "recent_events": [
     {
       "event": "birth",
-      "child_id": "praxis-g0",
-      "parent_id": null,
-      "gen": 0,
-      "pact": 0,
-      "genome_hash": "f542cbd118418cdd",
-      "t": "2026-03-16T06:22:54.966839+00:00"
-    },
-    {
-      "event": "birth",
       "child_id": "sentinel-g1",
       "parent_id": "praxis-g0",
       "gen": 1,
       "pact": 2000,
-      "genome_hash": "316c6bfce6c91df6",
-      "t": "2026-03-16T06:22:55.016488+00:00"
+      "t": "2026-03-16T06:35:37.247433+00:00"
     },
     {
       "event": "birth",
@@ -95,8 +85,7 @@
       "parent_id": "praxis-g0",
       "gen": 1,
       "pact": 2000,
-      "genome_hash": "fb0253e8877026c3",
-      "t": "2026-03-16T06:22:55.063437+00:00"
+      "t": "2026-03-16T06:35:37.247654+00:00"
     },
     {
       "event": "birth",
@@ -104,35 +93,7 @@
       "parent_id": "praxis-g0",
       "gen": 1,
       "pact": 2000,
-      "genome_hash": "d65e212a6aae5482",
-      "t": "2026-03-16T06:22:55.107753+00:00"
-    },
-    {
-      "event": "death",
-      "agent_id": "praxis-g0",
-      "gen": 0,
-      "cause": "balance_exhausted",
-      "lifespan_cycles": 0,
-      "balance_at_death": 0,
-      "distribution": [
-        {
-          "recipient": "sentinel-g1",
-          "amount": 0,
-          "relationship": "offspring"
-        },
-        {
-          "recipient": "scribe-g1",
-          "amount": 0,
-          "relationship": "offspring"
-        },
-        {
-          "recipient": "oracle-g1",
-          "amount": 0,
-          "relationship": "offspring"
-        }
-      ],
-      "genome_hash": "f542cbd118418cdd",
-      "t": "2026-03-16T06:30:01.948027+00:00"
+      "t": "2026-03-16T06:35:37.247789+00:00"
     }
   ],
   "on_chain": {
