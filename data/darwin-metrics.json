@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-16T06:22:55.133409+00:00",
+  "updated_at": "2026-03-16T06:31:41.862954+00:00",
   "ecosystem": {
-    "living_agents": 4,
+    "living_agents": 3,
     "total_births": 4,
-    "total_deaths": 0,
+    "total_deaths": 1,
     "max_generation": 1,
-    "oldest_agent_id": "praxis-g0"
+    "oldest_agent_id": "sentinel-g1"
   },
   "economics": {
     "pact_pool_initial": 10000,
@@ -22,28 +22,14 @@
       "sentinel-g1"
     ],
     "most_prolific_parent": "praxis-g0",
-    "highest_earning_agent": "praxis-g0",
+    "highest_earning_agent": "sentinel-g1",
     "niche_distribution": {
-      "coordinator": 1,
       "security": 1,
       "content": 1,
       "data": 1
     }
   },
   "agents": {
-    "praxis-g0": {
-      "name": "Praxis",
-      "generation": 0,
-      "balance": 0,
-      "role": "coordinator",
-      "model": "opus",
-      "alive": true,
-      "total_earned": 0,
-      "total_spent": 0,
-      "tasks_completed": 0,
-      "offspring_spawned": 0,
-      "cycles": 0
-    },
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
@@ -120,6 +106,33 @@
       "pact": 2000,
       "genome_hash": "d65e212a6aae5482",
       "t": "2026-03-16T06:22:55.107753+00:00"
+    },
+    {
+      "event": "death",
+      "agent_id": "praxis-g0",
+      "gen": 0,
+      "cause": "balance_exhausted",
+      "lifespan_cycles": 0,
+      "balance_at_death": 0,
+      "distribution": [
+        {
+          "recipient": "sentinel-g1",
+          "amount": 0,
+          "relationship": "offspring"
+        },
+        {
+          "recipient": "scribe-g1",
+          "amount": 0,
+          "relationship": "offspring"
+        },
+        {
+          "recipient": "oracle-g1",
+          "amount": 0,
+          "relationship": "offspring"
+        }
+      ],
+      "genome_hash": "f542cbd118418cdd",
+      "t": "2026-03-16T06:30:01.948027+00:00"
     }
   ],
   "on_chain": {
