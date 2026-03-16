@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T21:01:21.023051+00:00",
+  "updated_at": "2026-03-16T21:18:29.845171+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -14,7 +14,7 @@
     "pact_recirculated_total": 0,
     "tasks_completed": 0,
     "tasks_active": 3,
-    "total_cycles": 54
+    "total_cycles": 59
   },
   "evolution": {
     "longest_lineage": [
@@ -33,41 +33,41 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 1715,
+      "balance": 1705,
       "role": "security",
       "model": "haiku",
+      "alive": true,
+      "total_earned": 0,
+      "total_spent": 236,
+      "tasks_completed": 0,
+      "offspring_spawned": 0,
+      "cycles": 20
+    },
+    "scribe-g1": {
+      "name": "Scribe",
+      "generation": 1,
+      "balance": 1900,
+      "role": "content",
+      "model": "haiku",
+      "alive": true,
+      "total_earned": 0,
+      "total_spent": 80,
+      "tasks_completed": 0,
+      "offspring_spawned": 0,
+      "cycles": 20
+    },
+    "oracle-g1": {
+      "name": "Oracle",
+      "generation": 1,
+      "balance": 1753,
+      "role": "data",
+      "model": "sonnet",
       "alive": true,
       "total_earned": 0,
       "total_spent": 228,
       "tasks_completed": 0,
       "offspring_spawned": 0,
-      "cycles": 18
-    },
-    "scribe-g1": {
-      "name": "Scribe",
-      "generation": 1,
-      "balance": 1910,
-      "role": "content",
-      "model": "haiku",
-      "alive": true,
-      "total_earned": 0,
-      "total_spent": 72,
-      "tasks_completed": 0,
-      "offspring_spawned": 0,
-      "cycles": 18
-    },
-    "oracle-g1": {
-      "name": "Oracle",
-      "generation": 1,
-      "balance": 1766,
-      "role": "data",
-      "model": "sonnet",
-      "alive": true,
-      "total_earned": 0,
-      "total_spent": 216,
-      "tasks_completed": 0,
-      "offspring_spawned": 0,
-      "cycles": 18
+      "cycles": 19
     }
   },
   "recent_events": [
@@ -94,6 +94,13 @@
       "gen": 1,
       "pact": 2000,
       "t": "2026-03-16T06:35:37.247789+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260316-002",
+      "agent_id": "scribe-g1",
+      "bid_amount": 280,
+      "t": "2026-03-16T21:16:27.161786+00:00"
     }
   ],
   "on_chain": {
