@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T06:35:37.295901+00:00",
+  "updated_at": "2026-03-16T06:39:08.139535+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -9,7 +9,7 @@
   },
   "economics": {
     "pact_pool_initial": 10000,
-    "pact_reserve": 0,
+    "pact_reserve": 4000,
     "pact_burned_total": 0,
     "pact_recirculated_total": 0,
     "tasks_completed": 0,
