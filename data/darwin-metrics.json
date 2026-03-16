@@ -1,0 +1,132 @@
+{
+  "updated_at": "2026-03-16T06:22:55.133409+00:00",
+  "ecosystem": {
+    "living_agents": 4,
+    "total_births": 4,
+    "total_deaths": 0,
+    "max_generation": 1,
+    "oldest_agent_id": "praxis-g0"
+  },
+  "economics": {
+    "pact_pool_initial": 10000,
+    "pact_reserve": 0,
+    "pact_burned_total": 0,
+    "pact_recirculated_total": 0,
+    "tasks_completed": 0,
+    "tasks_active": 3,
+    "total_cycles": 0
+  },
+  "evolution": {
+    "longest_lineage": [
+      "praxis-g0",
+      "sentinel-g1"
+    ],
+    "most_prolific_parent": "praxis-g0",
+    "highest_earning_agent": "praxis-g0",
+    "niche_distribution": {
+      "coordinator": 1,
+      "security": 1,
+      "content": 1,
+      "data": 1
+    }
+  },
+  "agents": {
+    "praxis-g0": {
+      "name": "Praxis",
+      "generation": 0,
+      "balance": 0,
+      "role": "coordinator",
+      "model": "opus",
+      "alive": true,
+      "total_earned": 0,
+      "total_spent": 0,
+      "tasks_completed": 0,
+      "offspring_spawned": 0,
+      "cycles": 0
+    },
+    "sentinel-g1": {
+      "name": "Sentinel",
+      "generation": 1,
+      "balance": 2000,
+      "role": "security",
+      "model": "haiku",
+      "alive": true,
+      "total_earned": 0,
+      "total_spent": 0,
+      "tasks_completed": 0,
+      "offspring_spawned": 0,
+      "cycles": 0
+    },
+    "scribe-g1": {
+      "name": "Scribe",
+      "generation": 1,
+      "balance": 2000,
+      "role": "content",
+      "model": "haiku",
+      "alive": true,
+      "total_earned": 0,
+      "total_spent": 0,
+      "tasks_completed": 0,
+      "offspring_spawned": 0,
+      "cycles": 0
+    },
+    "oracle-g1": {
+      "name": "Oracle",
+      "generation": 1,
+      "balance": 2000,
+      "role": "data",
+      "model": "sonnet",
+      "alive": true,
+      "total_earned": 0,
+      "total_spent": 0,
+      "tasks_completed": 0,
+      "offspring_spawned": 0,
+      "cycles": 0
+    }
+  },
+  "recent_events": [
+    {
+      "event": "birth",
+      "child_id": "praxis-g0",
+      "parent_id": null,
+      "gen": 0,
+      "pact": 0,
+      "genome_hash": "f542cbd118418cdd",
+      "t": "2026-03-16T06:22:54.966839+00:00"
+    },
+    {
+      "event": "birth",
+      "child_id": "sentinel-g1",
+      "parent_id": "praxis-g0",
+      "gen": 1,
+      "pact": 2000,
+      "genome_hash": "316c6bfce6c91df6",
+      "t": "2026-03-16T06:22:55.016488+00:00"
+    },
+    {
+      "event": "birth",
+      "child_id": "scribe-g1",
+      "parent_id": "praxis-g0",
+      "gen": 1,
+      "pact": 2000,
+      "genome_hash": "fb0253e8877026c3",
+      "t": "2026-03-16T06:22:55.063437+00:00"
+    },
+    {
+      "event": "birth",
+      "child_id": "oracle-g1",
+      "parent_id": "praxis-g0",
+      "gen": 1,
+      "pact": 2000,
+      "genome_hash": "d65e212a6aae5482",
+      "t": "2026-03-16T06:22:55.107753+00:00"
+    }
+  ],
+  "on_chain": {
+    "pact_token": "0x809c2540358E2cF37050cCE41A610cb6CE66Abe1",
+    "escrow_contract": "0x220B97972d6028Acd70221890771E275e7734BFB",
+    "payment_channel": "0x5a9D124c05B425CD90613326577E03B3eBd1F891",
+    "grants_wallet": "",
+    "arbiscan_base": "https://arbiscan.io"
+  }
+}
