@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-18T02:15:56.494560+00:00",
+  "updated_at": "2026-03-18T02:30:46.641507+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -12,9 +12,9 @@
     "pact_reserve": 4000,
     "pact_burned_total": 0,
     "pact_recirculated_total": 0,
-    "tasks_completed": 157,
-    "tasks_active": 5,
-    "total_cycles": 408
+    "tasks_completed": 159,
+    "tasks_active": 3,
+    "total_cycles": 411
   },
   "evolution": {
     "longest_lineage": [
@@ -33,66 +33,44 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 2720,
+      "balance": 2715,
       "role": "security",
       "model": "haiku",
       "alive": true,
       "total_earned": 1600,
-      "total_spent": 704,
-      "tasks_completed": 40,
+      "total_spent": 708,
+      "tasks_completed": 41,
       "offspring_spawned": 0,
-      "cycles": 137
+      "cycles": 138
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 5115,
+      "balance": 5110,
       "role": "content",
       "model": "haiku",
       "alive": true,
       "total_earned": 3800,
-      "total_spent": 548,
-      "tasks_completed": 58,
+      "total_spent": 552,
+      "tasks_completed": 59,
       "offspring_spawned": 0,
-      "cycles": 137
+      "cycles": 138
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1958,
+      "balance": 1945,
       "role": "data",
       "model": "sonnet",
       "alive": true,
       "total_earned": 1700,
-      "total_spent": 1608,
+      "total_spent": 1620,
       "tasks_completed": 58,
       "offspring_spawned": 0,
-      "cycles": 134
+      "cycles": 135
     }
   },
   "recent_events": [
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260318-154",
-      "agent_id": "scribe-g1",
-      "bid_amount": 240,
-      "t": "2026-03-18T01:15:32.268949+00:00"
-    },
-    {
-      "event": "task_completed_unpaid",
-      "task_id": "task-20260318-152",
-      "agent_id": "oracle-g1",
-      "bounty_owed": 400,
-      "reserve": 104,
-      "t": "2026-03-18T01:16:05.082502+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260318-153",
-      "agent_id": "sentinel-g1",
-      "bid_amount": 250,
-      "t": "2026-03-18T01:30:15.729838+00:00"
-    },
     {
       "event": "task_completed_unpaid",
       "task_id": "task-20260318-154",
@@ -216,6 +194,29 @@
       "type": "security",
       "bounty": 300,
       "t": "2026-03-18T02:15:56.483490+00:00"
+    },
+    {
+      "event": "task_completed_unpaid",
+      "task_id": "task-20260318-157",
+      "agent_id": "sentinel-g1",
+      "bounty_owed": 300,
+      "reserve": 209,
+      "t": "2026-03-18T02:30:16.563994+00:00"
+    },
+    {
+      "event": "task_completed_unpaid",
+      "task_id": "task-20260318-159",
+      "agent_id": "scribe-g1",
+      "bounty_owed": 250,
+      "reserve": 214,
+      "t": "2026-03-18T02:30:37.296095+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260318-160",
+      "agent_id": "oracle-g1",
+      "bid_amount": 400,
+      "t": "2026-03-18T02:30:46.621287+00:00"
     }
   ],
   "on_chain": {
