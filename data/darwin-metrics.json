@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T13:16:49.437254+00:00",
+  "updated_at": "2026-03-20T13:30:45.260625+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -13,8 +13,8 @@
     "pact_burned_total": 0,
     "pact_recirculated_total": 0,
     "tasks_completed": 510,
-    "tasks_active": 3,
-    "total_cycles": 1116
+    "tasks_active": 6,
+    "total_cycles": 1119
   },
   "evolution": {
     "longest_lineage": [
@@ -33,88 +33,44 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 1962,
+      "balance": 1957,
       "role": "security",
       "model": "haiku",
       "alive": true,
       "total_earned": 3022,
-      "total_spent": 2648,
+      "total_spent": 2652,
       "tasks_completed": 157,
       "offspring_spawned": 0,
-      "cycles": 373
+      "cycles": 374
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 3799,
+      "balance": 3794,
       "role": "content",
       "model": "haiku",
       "alive": true,
       "total_earned": 5664,
-      "total_spent": 3492,
+      "total_spent": 3496,
       "tasks_completed": 176,
       "offspring_spawned": 0,
-      "cycles": 373
+      "cycles": 374
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1921,
+      "balance": 1908,
       "role": "data",
       "model": "sonnet",
       "alive": true,
       "total_earned": 4731,
-      "total_spent": 4440,
+      "total_spent": 4452,
       "tasks_completed": 176,
       "offspring_spawned": 0,
-      "cycles": 370
+      "cycles": 371
     }
   },
   "recent_events": [
-    {
-      "event": "task_completed",
-      "task_id": "task-20260320-502",
-      "agent_id": "scribe-g1",
-      "bounty_paid": 12,
-      "work_hash": "28e619f563e8f65f",
-      "t": "2026-03-20T12:15:37.578343+00:00"
-    },
-    {
-      "event": "task_completed",
-      "task_id": "task-20260320-504",
-      "agent_id": "oracle-g1",
-      "bounty_paid": 28,
-      "work_hash": "0c56adfae166517b",
-      "t": "2026-03-20T12:16:11.553491+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260320-507",
-      "agent_id": "sentinel-g1",
-      "bid_amount": 5,
-      "t": "2026-03-20T12:30:28.137769+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260320-505",
-      "agent_id": "scribe-g1",
-      "bid_amount": 8,
-      "t": "2026-03-20T12:30:40.363073+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260320-506",
-      "agent_id": "oracle-g1",
-      "bid_amount": 400,
-      "t": "2026-03-20T12:30:52.840234+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260320-508",
-      "type": "data",
-      "bounty": 28,
-      "t": "2026-03-20T12:30:52.861562+00:00"
-    },
     {
       "event": "task_posted",
       "task_id": "task-20260320-509",
@@ -218,6 +174,48 @@
       "bounty_paid": 28,
       "work_hash": "d9a6ce9a50a77482",
       "t": "2026-03-20T13:16:49.419636+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260320-511",
+      "agent_id": "sentinel-g1",
+      "bid_amount": 5,
+      "t": "2026-03-20T13:30:19.277853+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260320-513",
+      "agent_id": "scribe-g1",
+      "bid_amount": 8,
+      "t": "2026-03-20T13:30:34.168441+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260320-512",
+      "agent_id": "oracle-g1",
+      "bid_amount": 400,
+      "t": "2026-03-20T13:30:45.222890+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260320-514",
+      "type": "security",
+      "bounty": 12,
+      "t": "2026-03-20T13:30:45.239723+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260320-515",
+      "type": "content",
+      "bounty": 12,
+      "t": "2026-03-20T13:30:45.241580+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260320-516",
+      "type": "data",
+      "bounty": 28,
+      "t": "2026-03-20T13:30:45.243131+00:00"
     }
   ],
   "on_chain": {
