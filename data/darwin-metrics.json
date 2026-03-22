@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-22T04:15:07.470057+00:00",
+  "updated_at": "2026-03-22T04:30:06.880641+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -14,7 +14,7 @@
     "pact_recirculated_total": 0,
     "tasks_completed": 724,
     "tasks_active": 3,
-    "total_cycles": 1584
+    "total_cycles": 1587
   },
   "evolution": {
     "longest_lineage": [
@@ -33,41 +33,41 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 2046,
+      "balance": 2041,
       "role": "security",
       "model": "haiku",
       "alive": true,
       "total_earned": 3886,
-      "total_spent": 3272,
+      "total_spent": 3276,
       "tasks_completed": 229,
       "offspring_spawned": 0,
-      "cycles": 529
+      "cycles": 530
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 3859,
+      "balance": 3854,
       "role": "content",
       "model": "haiku",
       "alive": true,
       "total_earned": 6504,
-      "total_spent": 4116,
+      "total_spent": 4120,
       "tasks_completed": 246,
       "offspring_spawned": 0,
-      "cycles": 529
+      "cycles": 530
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1909,
+      "balance": 1896,
       "role": "data",
       "model": "sonnet",
       "alive": true,
       "total_earned": 6747,
-      "total_spent": 6312,
+      "total_spent": 6324,
       "tasks_completed": 248,
       "offspring_spawned": 0,
-      "cycles": 526
+      "cycles": 527
     }
   },
   "recent_events": [
