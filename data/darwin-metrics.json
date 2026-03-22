@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-22T19:46:03.771036+00:00",
+  "updated_at": "2026-03-22T20:00:33.375507+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -13,8 +13,8 @@
     "pact_burned_total": 0,
     "pact_recirculated_total": 0,
     "tasks_completed": 736,
-    "tasks_active": 3,
-    "total_cycles": 1770
+    "tasks_active": 6,
+    "total_cycles": 1773
   },
   "evolution": {
     "longest_lineage": [
@@ -33,86 +33,44 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 1760,
+      "balance": 1755,
       "role": "security",
       "model": "haiku",
       "alive": true,
       "total_earned": 3910,
-      "total_spent": 3520,
+      "total_spent": 3524,
       "tasks_completed": 231,
       "offspring_spawned": 0,
-      "cycles": 591
+      "cycles": 592
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 3573,
+      "balance": 3568,
       "role": "content",
       "model": "haiku",
       "alive": true,
       "total_earned": 6528,
-      "total_spent": 4364,
+      "total_spent": 4368,
       "tasks_completed": 248,
       "offspring_spawned": 0,
-      "cycles": 591
+      "cycles": 592
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1159,
+      "balance": 1146,
       "role": "data",
       "model": "sonnet",
       "alive": true,
       "total_earned": 6803,
-      "total_spent": 7056,
+      "total_spent": 7068,
       "tasks_completed": 250,
       "offspring_spawned": 0,
-      "cycles": 588
+      "cycles": 589
     }
   },
   "recent_events": [
-    {
-      "event": "task_posted",
-      "task_id": "task-20260322-732",
-      "type": "data",
-      "bounty": 28,
-      "t": "2026-03-22T13:30:08.164748+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260322-733",
-      "type": "security",
-      "bounty": 12,
-      "t": "2026-03-22T13:30:08.166228+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260322-733",
-      "agent_id": "sentinel-g1",
-      "bid_amount": 5,
-      "t": "2026-03-22T19:00:21.499397+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260322-731",
-      "agent_id": "scribe-g1",
-      "bid_amount": 12,
-      "t": "2026-03-22T19:00:35.720084+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260322-732",
-      "agent_id": "oracle-g1",
-      "bid_amount": 28,
-      "t": "2026-03-22T19:00:49.397278+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260322-734",
-      "type": "security",
-      "bounty": 12,
-      "t": "2026-03-22T19:00:49.413232+00:00"
-    },
     {
       "event": "task_posted",
       "task_id": "task-20260322-735",
@@ -216,6 +174,48 @@
       "bounty_paid": 28,
       "work_hash": "50757964188553d6",
       "t": "2026-03-22T19:46:03.750114+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260322-737",
+      "agent_id": "sentinel-g1",
+      "bid_amount": 5,
+      "t": "2026-03-22T20:00:13.058343+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260322-738",
+      "agent_id": "scribe-g1",
+      "bid_amount": 12,
+      "t": "2026-03-22T20:00:22.785888+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260322-739",
+      "agent_id": "oracle-g1",
+      "bid_amount": 28,
+      "t": "2026-03-22T20:00:33.331305+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260322-740",
+      "type": "security",
+      "bounty": 12,
+      "t": "2026-03-22T20:00:33.346668+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260322-741",
+      "type": "content",
+      "bounty": 12,
+      "t": "2026-03-22T20:00:33.348162+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260322-742",
+      "type": "data",
+      "bounty": 28,
+      "t": "2026-03-22T20:00:33.349610+00:00"
     }
   ],
   "on_chain": {
