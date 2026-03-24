@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T02:01:24.280803+00:00",
+  "updated_at": "2026-03-24T02:17:22.261121+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -9,12 +9,11 @@
   },
   "economics": {
     "pact_pool_initial": 10000,
-    "pact_reserve": 3400,
-    "pact_burned_total": 0,
-    "pact_recirculated_total": 0,
-    "tasks_completed": 922,
-    "tasks_active": 6,
-    "total_cycles": 18
+    "pact_reserve": 3417,
+    "pact_total_metabolism": 161,
+    "tasks_completed": 8,
+    "tasks_active": 3,
+    "total_cycles": 21
   },
   "evolution": {
     "longest_lineage": [
@@ -33,65 +32,44 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 1782,
+      "balance": 1789,
       "role": "security",
       "model": "haiku",
       "alive": true,
-      "total_earned": 12,
-      "total_spent": 24,
-      "tasks_completed": 1,
+      "total_earned": 24,
+      "total_spent": 28,
+      "tasks_completed": 2,
       "offspring_spawned": 0,
-      "cycles": 6
+      "cycles": 7
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 3594,
+      "balance": 3601,
       "role": "content",
       "model": "haiku",
       "alive": true,
-      "total_earned": 24,
-      "total_spent": 24,
-      "tasks_completed": 2,
+      "total_earned": 36,
+      "total_spent": 28,
+      "tasks_completed": 3,
       "offspring_spawned": 0,
-      "cycles": 6
+      "cycles": 7
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1178,
+      "balance": 1193,
       "role": "data",
       "model": "sonnet",
       "alive": true,
-      "total_earned": 56,
-      "total_spent": 72,
-      "tasks_completed": 2,
+      "total_earned": 84,
+      "total_spent": 84,
+      "tasks_completed": 3,
       "offspring_spawned": 0,
-      "cycles": 6
+      "cycles": 7
     }
   },
   "recent_events": [
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260324-920",
-      "agent_id": "oracle-g1",
-      "bid_amount": 28,
-      "t": "2026-03-24T01:50:56.145752+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260324-921",
-      "type": "data",
-      "bounty": 28,
-      "t": "2026-03-24T01:50:56.163625+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260324-922",
-      "type": "content",
-      "bounty": 12,
-      "t": "2026-03-24T01:50:56.165380+00:00"
-    },
     {
       "event": "task_completed",
       "task_id": "task-20260324-919",
@@ -225,6 +203,36 @@
       "type": "security",
       "bounty": 12,
       "t": "2026-03-24T02:01:24.255261+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-924",
+      "agent_id": "sentinel-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
+      "work_file": "/opt/praxis/darwin/work/sentinel-g1_task-20260324-924_20260324T021523.md",
+      "t": "2026-03-24T02:15:23.720605+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-923",
+      "agent_id": "scribe-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "Well-structured; References 3 real agents; References living_agents; References total_births; References total_deaths; 928 words; Substantial length",
+      "work_file": "/opt/praxis/darwin/work/scribe-g1_task-20260324-923_20260324T021617.md",
+      "t": "2026-03-24T02:16:17.638116+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-925",
+      "agent_id": "oracle-g1",
+      "bounty_paid": 28,
+      "eval_score": 1.0,
+      "eval_reason": "References real block number; References real gas price; References 2 real ecosystem metrics; Substantive length",
+      "work_file": "/opt/praxis/darwin/work/oracle-g1_task-20260324-925_20260324T021722.md",
+      "t": "2026-03-24T02:17:22.236042+00:00"
     }
   ],
   "on_chain": {
