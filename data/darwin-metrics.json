@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T02:31:07.989859+00:00",
+  "updated_at": "2026-03-24T02:47:11.861357+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -9,11 +9,11 @@
   },
   "economics": {
     "pact_pool_initial": 10000,
-    "pact_reserve": 3440,
-    "pact_total_metabolism": 184,
-    "tasks_completed": 8,
-    "tasks_active": 6,
-    "total_cycles": 24
+    "pact_reserve": 3411,
+    "pact_total_metabolism": 207,
+    "tasks_completed": 11,
+    "tasks_active": 3,
+    "total_cycles": 27
   },
   "evolution": {
     "longest_lineage": [
@@ -32,68 +32,44 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 1784,
+      "balance": 1791,
       "role": "security",
       "model": "haiku",
       "alive": true,
-      "total_earned": 24,
-      "total_spent": 32,
-      "tasks_completed": 2,
+      "total_earned": 36,
+      "total_spent": 36,
+      "tasks_completed": 3,
       "offspring_spawned": 0,
-      "cycles": 8
+      "cycles": 9
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 3596,
+      "balance": 3603,
       "role": "content",
       "model": "haiku",
       "alive": true,
-      "total_earned": 36,
-      "total_spent": 32,
-      "tasks_completed": 3,
+      "total_earned": 48,
+      "total_spent": 36,
+      "tasks_completed": 4,
       "offspring_spawned": 0,
-      "cycles": 8
+      "cycles": 9
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1180,
+      "balance": 1195,
       "role": "data",
       "model": "sonnet",
       "alive": true,
-      "total_earned": 84,
-      "total_spent": 96,
-      "tasks_completed": 3,
+      "total_earned": 112,
+      "total_spent": 108,
+      "tasks_completed": 4,
       "offspring_spawned": 0,
-      "cycles": 8
+      "cycles": 9
     }
   },
   "recent_events": [
-    {
-      "event": "task_posted",
-      "task_id": "task-20260324-924",
-      "type": "security",
-      "bounty": 12,
-      "t": "2026-03-24T01:56:32.849909+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260324-925",
-      "type": "data",
-      "bounty": 28,
-      "t": "2026-03-24T01:56:32.851296+00:00"
-    },
-    {
-      "event": "task_completed",
-      "task_id": "task-20260324-918",
-      "agent_id": "sentinel-g1",
-      "bounty_paid": 12,
-      "eval_score": 1.0,
-      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
-      "work_file": "/opt/praxis/darwin/work/sentinel-g1_task-20260324-918_20260324T015708.md",
-      "t": "2026-03-24T01:57:08.508256+00:00"
-    },
     {
       "event": "task_completed",
       "task_id": "task-20260324-922",
@@ -227,6 +203,36 @@
       "type": "content",
       "bounty": 12,
       "t": "2026-03-24T02:31:07.911440+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-928",
+      "agent_id": "sentinel-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
+      "work_file": "/opt/praxis/darwin/work/sentinel-g1_task-20260324-928_20260324T024527.md",
+      "t": "2026-03-24T02:45:27.097545+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-926",
+      "agent_id": "scribe-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "Well-structured; References 3 real agents; References living_agents; References total_births; References total_deaths; 881 words; Substantial length",
+      "work_file": "/opt/praxis/darwin/work/scribe-g1_task-20260324-926_20260324T024616.md",
+      "t": "2026-03-24T02:46:16.934212+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-927",
+      "agent_id": "oracle-g1",
+      "bounty_paid": 28,
+      "eval_score": 0.7,
+      "eval_reason": "References real gas price; References 2 real ecosystem metrics; Substantive length",
+      "work_file": "/opt/praxis/darwin/work/oracle-g1_task-20260324-927_20260324T024711.md",
+      "t": "2026-03-24T02:47:11.844076+00:00"
     }
   ],
   "on_chain": {
