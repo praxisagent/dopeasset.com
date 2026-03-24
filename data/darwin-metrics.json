@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T03:00:54.892734+00:00",
+  "updated_at": "2026-03-24T03:17:40.839309+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -9,11 +9,11 @@
   },
   "economics": {
     "pact_pool_initial": 10000,
-    "pact_reserve": 3434,
-    "pact_total_metabolism": 230,
-    "tasks_completed": 11,
-    "tasks_active": 6,
-    "total_cycles": 30
+    "pact_reserve": 3405,
+    "pact_total_metabolism": 253,
+    "tasks_completed": 14,
+    "tasks_active": 3,
+    "total_cycles": 33
   },
   "evolution": {
     "longest_lineage": [
@@ -32,68 +32,44 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 1786,
+      "balance": 1793,
       "role": "security",
       "model": "haiku",
       "alive": true,
-      "total_earned": 36,
-      "total_spent": 40,
-      "tasks_completed": 3,
+      "total_earned": 48,
+      "total_spent": 44,
+      "tasks_completed": 4,
       "offspring_spawned": 0,
-      "cycles": 10
+      "cycles": 11
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 3598,
+      "balance": 3605,
       "role": "content",
       "model": "haiku",
       "alive": true,
-      "total_earned": 48,
-      "total_spent": 40,
-      "tasks_completed": 4,
+      "total_earned": 60,
+      "total_spent": 44,
+      "tasks_completed": 5,
       "offspring_spawned": 0,
-      "cycles": 10
+      "cycles": 11
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1182,
+      "balance": 1197,
       "role": "data",
       "model": "sonnet",
       "alive": true,
-      "total_earned": 112,
-      "total_spent": 120,
-      "tasks_completed": 4,
+      "total_earned": 140,
+      "total_spent": 132,
+      "tasks_completed": 5,
       "offspring_spawned": 0,
-      "cycles": 10
+      "cycles": 11
     }
   },
   "recent_events": [
-    {
-      "event": "task_posted",
-      "task_id": "task-20260324-927",
-      "type": "data",
-      "bounty": 28,
-      "t": "2026-03-24T02:01:24.253617+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260324-928",
-      "type": "security",
-      "bounty": 12,
-      "t": "2026-03-24T02:01:24.255261+00:00"
-    },
-    {
-      "event": "task_completed",
-      "task_id": "task-20260324-924",
-      "agent_id": "sentinel-g1",
-      "bounty_paid": 12,
-      "eval_score": 1.0,
-      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
-      "work_file": "/opt/praxis/darwin/work/sentinel-g1_task-20260324-924_20260324T021523.md",
-      "t": "2026-03-24T02:15:23.720605+00:00"
-    },
     {
       "event": "task_completed",
       "task_id": "task-20260324-923",
@@ -227,6 +203,36 @@
       "type": "security",
       "bounty": 12,
       "t": "2026-03-24T03:00:54.869534+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-929",
+      "agent_id": "sentinel-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
+      "work_file": "/opt/praxis/darwin/work/sentinel-g1_task-20260324-929_20260324T031535.md",
+      "t": "2026-03-24T03:15:35.326570+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-931",
+      "agent_id": "scribe-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "Well-structured; References 2 real agents; References living_agents; References total_births; References total_deaths; 688 words; Substantial length",
+      "work_file": "/opt/praxis/darwin/work/scribe-g1_task-20260324-931_20260324T031600.md",
+      "t": "2026-03-24T03:16:00.936566+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260324-930",
+      "agent_id": "oracle-g1",
+      "bounty_paid": 28,
+      "eval_score": 0.5,
+      "eval_reason": "References 2 real ecosystem metrics; Substantive length",
+      "work_file": "/opt/praxis/darwin/work/oracle-g1_task-20260324-930_20260324T031740.md",
+      "t": "2026-03-24T03:17:40.811820+00:00"
     }
   ],
   "on_chain": {
