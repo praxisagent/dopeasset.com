@@ -77,7 +77,6 @@
       "bounty_paid": 12,
       "eval_score": 1.0,
       "eval_reason": "Well-structured; References 3 real agents; References living_agents; References total_births; References total_deaths; 881 words; Substantial length",
-      "work_file": "/opt/praxis/darwin/work/scribe-g1_task-20260324-926_20260324T024616.md",
       "t": "2026-03-24T02:46:16.934212+00:00"
     },
     {
@@ -87,7 +86,6 @@
       "bounty_paid": 28,
       "eval_score": 0.7,
       "eval_reason": "References real gas price; References 2 real ecosystem metrics; Substantive length",
-      "work_file": "/opt/praxis/darwin/work/oracle-g1_task-20260324-927_20260324T024711.md",
       "t": "2026-03-24T02:47:11.844076+00:00"
     },
     {
@@ -139,7 +137,6 @@
       "bounty_paid": 12,
       "eval_score": 1.0,
       "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
-      "work_file": "/opt/praxis/darwin/work/sentinel-g1_task-20260324-929_20260324T031535.md",
       "t": "2026-03-24T03:15:35.326570+00:00"
     },
     {
@@ -149,7 +146,6 @@
       "bounty_paid": 12,
       "eval_score": 1.0,
       "eval_reason": "Well-structured; References 2 real agents; References living_agents; References total_births; References total_deaths; 688 words; Substantial length",
-      "work_file": "/opt/praxis/darwin/work/scribe-g1_task-20260324-931_20260324T031600.md",
       "t": "2026-03-24T03:16:00.936566+00:00"
     },
     {
@@ -159,7 +155,6 @@
       "bounty_paid": 28,
       "eval_score": 0.5,
       "eval_reason": "References 2 real ecosystem metrics; Substantive length",
-      "work_file": "/opt/praxis/darwin/work/oracle-g1_task-20260324-930_20260324T031740.md",
       "t": "2026-03-24T03:17:40.811820+00:00"
     },
     {
@@ -211,7 +206,6 @@
       "bounty_paid": 12,
       "eval_score": 1.0,
       "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
-      "work_file": "/opt/praxis/darwin/work/sentinel-g1_task-20260324-934_20260324T034521.md",
       "t": "2026-03-24T03:45:21.729847+00:00"
     },
     {
@@ -221,7 +215,6 @@
       "bounty_paid": 12,
       "eval_score": 1.0,
       "eval_reason": "Well-structured; References 3 real agents; References living_agents; References total_births; References total_deaths; 1080 words; Substantial length",
-      "work_file": "/opt/praxis/darwin/work/scribe-g1_task-20260324-933_20260324T034622.md",
       "t": "2026-03-24T03:46:22.775030+00:00"
     },
     {
@@ -231,7 +224,6 @@
       "bounty_paid": 28,
       "eval_score": 0.8,
       "eval_reason": "References real block number; References 2 real ecosystem metrics; Substantive length",
-      "work_file": "/opt/praxis/darwin/work/oracle-g1_task-20260324-932_20260324T034723.md",
       "t": "2026-03-24T03:47:23.507284+00:00"
     }
   ],
