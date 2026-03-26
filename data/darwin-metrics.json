@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T18:00:58.130090+00:00",
+  "updated_at": "2026-03-26T18:17:17.879246+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -9,11 +9,11 @@
   },
   "economics": {
     "pact_pool_initial": 10000,
-    "pact_reserve": 2930,
-    "pact_total_metabolism": 5014,
-    "tasks_completed": 319,
-    "tasks_active": 6,
-    "total_cycles": 654
+    "pact_reserve": 2901,
+    "pact_total_metabolism": 5037,
+    "tasks_completed": 322,
+    "tasks_active": 3,
+    "total_cycles": 657
   },
   "evolution": {
     "longest_lineage": [
@@ -32,67 +32,44 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 1970,
+      "balance": 1977,
       "role": "security",
       "model": "haiku",
       "alive": true,
-      "total_earned": 1260,
-      "total_spent": 872,
-      "tasks_completed": 105,
+      "total_earned": 1272,
+      "total_spent": 876,
+      "tasks_completed": 106,
       "offspring_spawned": 0,
-      "cycles": 218
+      "cycles": 219
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 3794,
+      "balance": 3801,
       "role": "content",
       "model": "haiku",
       "alive": true,
-      "total_earned": 1284,
-      "total_spent": 872,
-      "tasks_completed": 107,
+      "total_earned": 1296,
+      "total_spent": 876,
+      "tasks_completed": 108,
       "offspring_spawned": 0,
-      "cycles": 218
+      "cycles": 219
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1306,
+      "balance": 1321,
       "role": "data",
       "model": "sonnet",
       "alive": true,
-      "total_earned": 2940,
-      "total_spent": 2616,
-      "tasks_completed": 105,
+      "total_earned": 2968,
+      "total_spent": 2628,
+      "tasks_completed": 106,
       "offspring_spawned": 0,
-      "cycles": 218
+      "cycles": 219
     }
   },
   "recent_events": [
-    {
-      "event": "task_posted",
-      "task_id": "task-20260326-1235",
-      "type": "data",
-      "bounty": 28,
-      "t": "2026-03-26T17:00:57.724487+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260326-1236",
-      "type": "content",
-      "bounty": 12,
-      "t": "2026-03-26T17:00:57.726070+00:00"
-    },
-    {
-      "event": "task_completed",
-      "task_id": "task-20260326-1232",
-      "agent_id": "sentinel-g1",
-      "bounty_paid": 12,
-      "eval_score": 1.0,
-      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
-      "t": "2026-03-26T17:15:34.602252+00:00"
-    },
     {
       "event": "task_completed",
       "task_id": "task-20260326-1233",
@@ -221,6 +198,33 @@
       "type": "content",
       "bounty": 12,
       "t": "2026-03-26T18:00:58.110468+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260326-1237",
+      "agent_id": "sentinel-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
+      "t": "2026-03-26T18:15:22.257222+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260326-1238",
+      "agent_id": "scribe-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "Well-structured; References 3 real agents; References living_agents; References total_births; References total_deaths; References reserve; 883 words; Substantial length",
+      "t": "2026-03-26T18:16:12.338425+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260326-1239",
+      "agent_id": "oracle-g1",
+      "bounty_paid": 28,
+      "eval_score": 0.7,
+      "eval_reason": "References real gas price; References 2 real ecosystem metrics; Substantive length",
+      "t": "2026-03-26T18:17:17.860245+00:00"
     }
   ],
   "on_chain": {
