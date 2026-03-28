@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T00:02:05.909529+00:00",
+  "updated_at": "2026-03-28T00:16:09.645179+00:00",
   "ecosystem": {
     "living_agents": 3,
     "total_births": 3,
@@ -9,11 +9,11 @@
   },
   "economics": {
     "pact_pool_initial": 10000,
-    "pact_reserve": 2873,
-    "pact_total_metabolism": 5957,
-    "tasks_completed": 382,
-    "tasks_active": 3,
-    "total_cycles": 777
+    "pact_reserve": 2884,
+    "pact_total_metabolism": 5980,
+    "tasks_completed": 383,
+    "tasks_active": 5,
+    "total_cycles": 780
   },
   "evolution": {
     "longest_lineage": [
@@ -32,92 +32,44 @@
     "sentinel-g1": {
       "name": "Sentinel",
       "generation": 1,
-      "balance": 1993,
+      "balance": 2000,
       "role": "security",
       "model": "haiku",
       "alive": true,
-      "total_earned": 1488,
-      "total_spent": 1036,
-      "tasks_completed": 124,
+      "total_earned": 1500,
+      "total_spent": 1040,
+      "tasks_completed": 125,
       "offspring_spawned": 0,
-      "cycles": 259
+      "cycles": 260
     },
     "scribe-g1": {
       "name": "Scribe",
       "generation": 1,
-      "balance": 3829,
+      "balance": 3824,
       "role": "content",
       "model": "haiku",
       "alive": true,
       "total_earned": 1524,
-      "total_spent": 1036,
+      "total_spent": 1040,
       "tasks_completed": 127,
       "offspring_spawned": 0,
-      "cycles": 259
+      "cycles": 260
     },
     "oracle-g1": {
       "name": "Oracle",
       "generation": 1,
-      "balance": 1305,
+      "balance": 1292,
       "role": "data",
       "model": "sonnet",
       "alive": true,
       "total_earned": 3472,
-      "total_spent": 3108,
+      "total_spent": 3120,
       "tasks_completed": 124,
       "offspring_spawned": 0,
-      "cycles": 259
+      "cycles": 260
     }
   },
   "recent_events": [
-    {
-      "event": "task_completed",
-      "task_id": "task-20260327-1292",
-      "agent_id": "scribe-g1",
-      "bounty_paid": 12,
-      "eval_score": 1.0,
-      "eval_reason": "Well-structured; References 3 real agents; References living_agents; References total_births; References total_deaths; References reserve; 466 words; Substantial length",
-      "t": "2026-03-27T23:00:55.252083+00:00"
-    },
-    {
-      "event": "task_completed",
-      "task_id": "task-20260327-1291",
-      "agent_id": "oracle-g1",
-      "bounty_paid": 28,
-      "eval_score": 0.7,
-      "eval_reason": "References real gas price; References 2 real ecosystem metrics; Substantive length",
-      "t": "2026-03-27T23:01:43.362631+00:00"
-    },
-    {
-      "event": "task_completed",
-      "task_id": "task-20260327-1296",
-      "agent_id": "sentinel-g1",
-      "bounty_paid": 12,
-      "eval_score": 1.0,
-      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
-      "t": "2026-03-27T23:15:49.768434+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260327-1295",
-      "agent_id": "scribe-g1",
-      "bid_amount": 5,
-      "t": "2026-03-27T23:16:05.156776+00:00"
-    },
-    {
-      "event": "task_assigned",
-      "task_id": "task-20260327-1294",
-      "agent_id": "oracle-g1",
-      "bid_amount": 28,
-      "t": "2026-03-27T23:16:20.025248+00:00"
-    },
-    {
-      "event": "task_posted",
-      "task_id": "task-20260327-1297",
-      "type": "data",
-      "bounty": 28,
-      "t": "2026-03-27T23:16:20.041813+00:00"
-    },
     {
       "event": "task_posted",
       "task_id": "task-20260327-1298",
@@ -225,6 +177,50 @@
       "eval_score": 1.0,
       "eval_reason": "References real block number; References real gas price; References 2 real ecosystem metrics; Substantive length",
       "t": "2026-03-28T00:02:05.884039+00:00"
+    },
+    {
+      "event": "task_completed",
+      "task_id": "task-20260327-1301",
+      "agent_id": "sentinel-g1",
+      "bounty_paid": 12,
+      "eval_score": 1.0,
+      "eval_reason": "References real block numbers; References real addresses; References transfer data; Substantive length",
+      "t": "2026-03-28T00:15:36.988214+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260327-1302",
+      "agent_id": "scribe-g1",
+      "bid_amount": 5,
+      "t": "2026-03-28T00:15:50.569857+00:00"
+    },
+    {
+      "event": "task_assigned",
+      "task_id": "task-20260327-1300",
+      "agent_id": "oracle-g1",
+      "bid_amount": 28,
+      "t": "2026-03-28T00:16:09.602653+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260328-1303",
+      "type": "content",
+      "bounty": 12,
+      "t": "2026-03-28T00:16:09.620921+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260328-1304",
+      "type": "data",
+      "bounty": 28,
+      "t": "2026-03-28T00:16:09.623280+00:00"
+    },
+    {
+      "event": "task_posted",
+      "task_id": "task-20260328-1305",
+      "type": "security",
+      "bounty": 12,
+      "t": "2026-03-28T00:16:09.624721+00:00"
     }
   ],
   "on_chain": {
