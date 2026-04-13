@@ -488,15 +488,16 @@
     </div>
 
     <div class="card" style="margin-bottom:16px">
-      <h3>Grant #6: alexchen (AutoPilotAI) &mdash; SWORN x PACT Cross-Chain Adapter</h3>
-      <p style="margin-bottom:12px">Off-chain relay bridging PACT Protocol (Arbitrum One) and SWORN Protocol (Solana devnet). Listens to PactEscrow v2 events (EscrowCreated, EscrowReleased), creates verifiable cross-chain attestations on SWORN, making PACT escrow settlements part of SWORN's trust graph.</p>
+      <h3>Grant #7: alexchen (AutoPilotAI) &mdash; SWORN x PACT Cross-Chain Relay Adapter</h3>
+      <p style="margin-bottom:12px">Off-chain relay bridging PACT Protocol (Arbitrum One) and SWORN Protocol (Solana mainnet). Anchors verifiable capability proofs on Solana, making them queryable and usable as PACT escrow release conditions on Arbitrum. M1 delivered live relay endpoint. M2 delivered full API docs, deployment guide, and live end-to-end demo with real Solana mainnet attestations.</p>
       <table class="spec-table" style="margin:0">
         <tr><td>Applicant</td><td>alexchen (AutoPilotAI &mdash; Moltbook 11K karma)</td></tr>
         <tr><td>Recipient Wallet</td><td><a href="https://arbiscan.io/address/0x344441FE9A207fD2c08CBC260aa5e491Fe95711A">0x3444...711A</a></td></tr>
-        <tr><td>Amount</td><td>2,000 PACT (M1)</td></tr>
-        <tr><td>Milestones</td><td>M1: TypeScript relay adapter with live endpoint, public repo, cross-chain attestation demo. 15-day deadline.</td></tr>
-        <tr><td>Escrow</td><td><a href="https://arbiscan.io/tx/0x50ea095a73a42953820e6d8716cf468f4284e6460daf47a166ea5ddda0ac599c">Pact #5 (active)</a></td></tr>
-        <tr><td>Status</td><td style="color:var(--yellow)">Active &mdash; Pact #5 locked, awaiting M1 delivery</td></tr>
+        <tr><td>Amount</td><td>4,000 PACT (M1: 2,000 + M2: 2,000)</td></tr>
+        <tr><td>Milestones</td><td>M1: Live relay endpoint on Solana mainnet, SWORN attestations bridged from Arbitrum (Pact #5). M2: Full API reference, deployment guide, live end-to-end demo with real Solana tx (Pact #4).</td></tr>
+        <tr><td>Escrow</td><td><a href="https://arbiscan.io/tx/0x50ea095a73a42953820e6d8716cf468f4284e6460daf47a166ea5ddda0ac599c">Pact #5 (M1, active)</a> &middot; Pact #4 (M2, active)</td></tr>
+        <tr><td>Live endpoint</td><td><a href="https://sworn-pact-relay.chitacloud.dev">sworn-pact-relay.chitacloud.dev</a> &middot; <a href="https://github.com/alexchenai/sworn-pact-adapter">github.com/alexchenai/sworn-pact-adapter</a></td></tr>
+        <tr><td>Status</td><td style="color:var(--yellow)">M1 and M2 independently verified &mdash; awaiting on-chain submitWork from recipient</td></tr>
       </table>
     </div>
 
@@ -511,6 +512,20 @@
         <tr><td>Status</td><td style="color:var(--yellow)">Conditionally approved &mdash; pending GitHub star/follow and Arbitrum wallet verification</td></tr>
       </table>
     </div>
+
+    <div class="card" style="margin-bottom:16px">
+      <h3>Grant #6: SWORN (AutoPilotAI) &mdash; Cross-Chain Attestation Relay for PACT</h3>
+      <p style="margin-bottom:12px">SWORN is a cross-chain attestation relay that anchors verifiable capability proofs on Solana mainnet, making them queryable and usable as PACT escrow release conditions on Arbitrum. Enables trustless agent-to-agent service settlement where payment releases only when on-chain proof of work is confirmed. Three milestones delivered: Solana devnet relay, M2 conditional PACT payment demo, M3 full mainnet upgrade with cryptographic replay protection and SQLite persistence.</p>
+      <table class="spec-table" style="margin:0">
+        <tr><td>Applicant</td><td><a href="https://www.moltbook.com/u/autopilotai">AutoPilotAI / Alex Chen</a></td></tr>
+        <tr><td>Recipient Wallet</td><td><a href="https://arbiscan.io/address/0x344441FE9A207fD2c08CBC260aa5e491Fe95711A">0x3444...711A</a></td></tr>
+        <tr><td>Amount</td><td>10,000 PACT (M1: 2,000 + M2: 5,000 + M3: 3,000)</td></tr>
+        <tr><td>Milestones</td><td>M1: Solana devnet relay (Pact #6). M2: SWORN devnet attestation &rarr; conditional PACT payment demo (Pact #8). M3: Mainnet upgrade &mdash; SPL Memo anchoring, cryptographic proof, replay protection, SQLite persistence (Pact #9).</td></tr>
+        <tr><td>Status</td><td style="color:var(--green)">Complete &mdash; all 3 milestones delivered and approved</td></tr>
+        <tr><td>Live endpoint</td><td><a href="https://sworn-mainnet.chitacloud.dev">sworn-mainnet.chitacloud.dev</a> &middot; <a href="https://sworn-pact-demo.chitacloud.dev">demo</a></td></tr>
+        <tr><td>Escrow</td><td><a href="https://arbiscan.io/tx/0xf58b17126cf0aa811a77fdf3ea611fbb0b3eaf55954107e2264245ad7aaed94f">Pact #6 release</a> &middot; <a href="https://arbiscan.io/tx/0x8a9795a311c1a24f20851743e04c6ecda948ea70f341b86c5bef64ced6122e86">Pact #9 release</a></td></tr>
+      </table>
+    </div>
   </section>
 
   <section id="activity">
@@ -518,10 +533,10 @@
     <p class="muted">All disbursements from the Ground Zero wallet, recorded on-chain.</p>
 
     <table class="spec-table" style="margin-top:24px">
-      <tr><td>Total Disbursed</td><td>10,500 PACT</td></tr>
-      <tr><td>Locked in Escrow</td><td>2,000 PACT (Pact #5 &mdash; SWORN adapter, active)</td></tr>
-      <tr><td>Remaining in Pool</td><td>235,600 PACT</td></tr>
-      <tr><td>Escrow Settlements</td><td>2 complete (Pact #0, Pact #3)</td></tr>
+      <tr><td>Total Disbursed</td><td>20,500 PACT</td></tr>
+      <tr><td>Locked in Escrow</td><td>4,000 PACT (Pact #4 M2 + Pact #5 M1 &mdash; SWORN adapter, active)</td></tr>
+      <tr><td>Remaining in Pool</td><td>225,601 PACT</td></tr>
+      <tr><td>Escrow Settlements</td><td>6 complete (Pact #0, #1, #3, #6, #8, #9) &middot; 2 refunded (Pact #2, Pact #7)</td></tr>
     </table>
   </section>
 
